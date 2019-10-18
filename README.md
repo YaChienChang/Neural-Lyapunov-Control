@@ -6,7 +6,7 @@ Neural Lyapunov Control
 - [dReal4](https://github.com/dreal/dreal4)
 - [PyTorch](https://pytorch.org/get-started/locally/)
 
-## How It Works
+## How it works
 The framework consists of a learner and a falsifier. The learner minimizes the Lyapunov risk to find parameters in both a control function and a neural Lyapunov function. The falsifier takes the learned control function and the neural Lyapunov function from the learner and checks whether there is a state vector violating the Lyapunov conditions.
 
 ## A typical procedure is as follows:
