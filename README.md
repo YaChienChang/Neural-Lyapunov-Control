@@ -16,7 +16,7 @@ The framework consists of a learner and a falsifier. The learner minimizes the L
 - Start training and verifying 
 - Procedure stops when no counterexample is found
 
-The training part updates the parameters by iteratively minimizing the Lyapunov risk, a cost function measures the degree of violation of the Lyapunov conditions and the verifying part periodically searches counterexample state vectors and adds them back to the training set for the next iteration. This procedure provides flexibility to adjust the cost function for learning additional properties of controllers and Lyapunov functions. In example we add a tuning term to maximize the region of attractions. 
+The training part updates the parameters by iteratively minimizing the Lyapunov risk, a cost function measures the degree of violation of the Lyapunov conditions and the verifying part periodically searches counterexample state vectors and adds them back to the training set for the next iteration. This procedure provides flexibility to adjust the cost function for learning additional properties of controllers and Lyapunov functions. In examples we add a tuning term to maximize the region of attractions. 
 
 ## Example
 - [Inverted pendulum](https://github.com/YaChienChang/Neural-Lyapunov-Control/blob/master/Inverted%20_Pendulum.ipynb)
