@@ -1,5 +1,5 @@
 # Neural-Lyapunov-Control
-This repository contains the code for learning Lyapunov functions and control policies of nonlinear dynamical systems in the paper:
+This repository contains the code for the paper:
 Neural Lyapunov Control
 
 ## Requirements
@@ -14,9 +14,9 @@ The framework consists of a learner and a falsifier. The learner minimizes the L
 - Define a controlled dynamical system 
 - Set checking conditions for falsifier 
 - Start training and verifying 
-- Procedure stops when no counterexample is found by falsifier
+- Procedure stops when no counterexample is found
 
-The training part updates the parameters by iteratively minimizing the Lyapunov risk, a cost function measures the degree of violation of the Lyapunov conditions and the verifying part periodically searchs counterexample state vectors and add them back to the training set for the next iteration. This procedure provides flexibility to adjust the cost function for learning additional properties of controllers and Lyapunov functions. In example we add tuning term to maximize the region of attractions. 
+The training part updates the parameters by iteratively minimizing the Lyapunov risk, a cost function measures the degree of violation of the Lyapunov conditions and the verifying part periodically searchs counterexample state vectors and adds them back to the training set for the next iteration. This procedure provides flexibility to adjust the cost function for learning additional properties of controllers and Lyapunov functions. In example we add tuning term to maximize the region of attractions. 
 
 ## Example
 - [Inverted pendulum](https://github.com/YaChienChang/Neural-Lyapunov-Control/blob/master/Inverted%20_Pendulum.ipynb)
