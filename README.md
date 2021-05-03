@@ -3,8 +3,8 @@ This repository contains the code for the paper:
 Neural Lyapunov Control
 
 ## Requirements
-- [dReal4](https://github.com/dreal/dreal4)
-- [PyTorch](https://pytorch.org/get-started/locally/)
+- [dReal4: v4.19.02.1] (https://github.com/dreal/dreal4)
+- [PyTorch: 1.2.0] (https://pytorch.org/get-started/locally/)
 
 ## How it works
 The framework consists of a learner and a falsifier. The learner minimizes the Lyapunov risk to find parameters in both a control function and a neural Lyapunov function. The falsifier takes the learned control function and the neural Lyapunov function from the learner and checks whether there is a state vector violating the Lyapunov conditions.
